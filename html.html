@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>HTML</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,32 +20,32 @@
     </div>
 
     <div class="myitem">
-    <p><code>&lt;html&gt;&lt;/html&gt;</code></p>
+    <p><code>&lt;html&gt;<i>content</i>&lt;/html&gt;</code></p>
     <p>Root element of an HTML page. It's where the HTML document itself begins.</p>
     </div>
 
     <div class="myitem">
-    <p><code>&lt;head&gt;&lt;/head&gt;</code></p>
+    <p><code>&lt;head&gt;<i>content</i>&lt;/head&gt;</code></p>
     <p>Contains meta information about the page.</p>
     </div>
 
     <div class="myitem">
-    <p><code>&lt;title&gt;&lt;/title&gt;</code></p>
-    <p>Specifies a title for the page, shown either in the title bar or in the page's tab.</p>
+    <p><code>&lt;title&gt;<i>content</i>&lt;/title&gt;</code></p>
+    <p>Specifies <code><i>content</i></code> as the title for the page, shown either in the title bar or in the page's tab.</p>
     </div>
 
     <div class="myitem">
-    <p><code>&lt;body&gt;&lt;/body&gt;</code></p>
+    <p><code>&lt;body&gt;<i>content</i>&lt;/body&gt;</code></p>
     <p>Defines the document's body, and is a container for all the visible contents.</p>
     </div>
 
     <div class="myitem">
-    <p><code>&lt;h1&gt;&lt;/h1&gt;</code></p>
+    <p><code>&lt;h1&gt;<i>content</i>&lt;/h1&gt;</code></p>
     <p>Defines the most important heading.</p>
     </div>
 
     <div class="myitem">
-    <p><code>&lt;p&gt;&lt;/p&gt;</code></p>
+    <p><code>&lt;p&gt;<i>content</i>&lt;/p&gt;</code></p>
     <p>Defines a paragraph.</p>
     </div>
 
@@ -57,24 +57,35 @@
     <h2>Basic</h2>
 
     <div class="myitem">
-    <p>
-        <code>&lt;h2&gt;&lt;/h2&gt;</code><br>
-        <code>&lt;h3&gt;&lt;/h3&gt;</code><br>
-        <code>&lt;h4&gt;&lt;/h4&gt;</code><br>
-        <code>&lt;h5&gt;&lt;/h5&gt;</code><br>
-        <code>&lt;h6&gt;&lt;/h6&gt;</code>
-    </p>
-    <p>Define headings together with <code>h1</code>. From most important to least important.</p>
+    <p><code>&lt;h1&gt;<i>content</i>&lt;/h1&gt;</code> to <code>&lt;h6&gt;<i>content</i>&lt;/h6&gt;</code></p>
+    <p>Define headings from most important to least important.</p>
     </div>
 
     <div class="myitem">
-    <p><code>&lt;a href="<i>link_destination</i>"&gt;<i>element_displayed</i>&lt;/a&gt;</code></p>
-    <p>Defines a link to <code><i>link_destination</i></code> that is activated when clicking in <code><i>element_displayed</i></code>.</p>
+    <p><code>&lt;a href="<i>dest_url</i>"&gt;<i>content</i>&lt;/a&gt;</code></p>
+    <p>Defines an hyperlink to <code><i>dest_url</i></code> that is activated when clicking in <code><i>content</i></code>.</p>
     </div>
 
     <div class="myitem">
-    <p><code>&lt;img src="<i>source_file</i>" alt="<i>alternative_text</i>" width="<i>width</i>>" height="<i>height</i>>"&gt;</code></p>
-    <p>Inserts the image specified by <code><i>source file</i></code>, with <code>alt</code>, <code>width</code> and <code>height</code> attributes.
+    <p><code>&lt;img src="<i>img_url</i>" alt="<i>alt_text</i>" width="<i>width</i>" height="<i>height</i>"&gt;</code></p>
+    <p>Embeds the image specified by <code><i>img_url</i></code>, with <code>alt</code>, <code>width</code> and <code>height</code> attributes, that set the alternative text, width, and height, respectively.
+    </div>
+
+    <h2>Attributes</h2>
+
+    <div class="myitem">
+    <p><code>&lt;p style="color:red;"&gt;<i>content</i>&lt;/p&gt;</code></p>
+    <p>The <code>style</code> attribute is used to add styles to an element. In the code shown, it sets the font color of <code><i>content</i></code> to red.</p>
+    </div>
+
+    <div class="myitem">
+    <p><code>&lt;html lang="en-US"&gt;<i>content</i>&lt;/html&gt;</code></p>
+    <p>The <code>lang</code> attribute declares the language of the element. Should always be included in the <code>&lt;html&gt;</code> tag to declare the language of the web page. It can also optionally specify the country. In the code shown, it specifies the language as English and the country as United States.</p>
+    </div>
+
+    <div class="myitem">
+    <p><code>&lt;p title="<i>tooltip</i>"&gt;<i>content</i>&lt;/p&gt;</code></p>
+    <p>The <code>title</code> attribute defines extra information about an element. In the code shown, it displays <code><i>tooltip</i></code> when the mouse is hovered over <code><i>content</i></code>.</p>
     </div>
 </body>
 </html>
