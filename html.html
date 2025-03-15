@@ -219,5 +219,51 @@
     <p><code>&lt;bdo dir="rtl"&gt;<i>content</i>&lt;/bdo&gt;</code></p>
     <p>Used to override the direction of <code><i>content</i></code>. BDO stands for bi-directional override.</p>
     </div>
+
+    <h2>CSS</h2>
+
+    <div class="myitem">
+    <p><code>&lt;style&gt;<i>css_content</i>&lt;/style&gt;</code></p>
+    <p>The <code>&lt;style&gt;</code> element defines the style for a single HTML page. Used inside the <code>&lt;head&gt;</code> section. The structure of <code><i>css_content</i></code> is as follows:</p>
+    <p><code>
+        <i>element_1</i> {<i>property_11</i>: <i>value_11</i>; ... ; <i>property_1j</i>: <i>value_1j</i>; ... ; <i>property_1n</i>: <i>value_1n</i>;} <br>
+        ... <br>
+        <i>element_i</i> {<i>property_i1</i>: <i>value_i1</i>; ... ; <i>property_ij</i>: <i>value_ij</i>; ... ; <i>property_in</i>: <i>value_in</i>;} <br>
+        ... <br>
+        <i>element_m</i> {<i>property_m1</i>: <i>value_m1</i>; ... ; <i>property_mj</i>: <i>value_mj</i>; ... ; <i>property_mn</i>: <i>value_mn</i>;}
+    </code></p>
+    </div>
+
+    <div class="myitem">
+    <p><code>&lt;link rel="stylesheet" href="<i>css_file_location</i>"&gt;</code></p>
+    <p>Used inside the <code>&lt;head&gt;</code> section to implement the CSS styles defined in the file located at <code><i>css_file_location</i></code>. Is common practice for this file to have the <code>.css</code> file extension.</p>
+    </div>
+
+    <div class="myitem">
+    <p><code>
+    &lt;style&gt; <br>
+        p {border: <i>num</i>px solid <i>color_value</i>>;} <br>
+    &lt;/style&gt;
+    </code></p>
+    <p>The CSS <code>border</code> property defines a border around an HTML element. In the code above, it specifies for the <code>&lt;p&gt;</code> element a <code><i>num</i></code> pixels wide, <code><i>color_value</i></code> colored, solid border.</p>
+    </div>
+
+    <div class="myitem">
+    <p><code>
+    &lt;style&gt; <br>
+        p {padding: <i>num</i>px;} <br>
+    &lt;/style&gt;
+    </code></p>
+    <p>The CSS <code>padding</code> property defines a padding between the content of the element and the border. In the code above, it specifies for the <code>&lt;p&gt;</code> element a padding of <code><i>num</i></code> pixels.</p>
+    </div>
+
+    <div class="myitem">
+    <p><code>
+    &lt;style&gt; <br>
+        p {margin: <i>num</i>px;} <br>
+    &lt;/style&gt;
+    </code></p>
+    <p>The CSS <code>margin</code> property defines a margin outside the border. In the code above, it specifies for the <code>&lt;p&gt;</code> element a margin of <code><i>num</i></code> pixels.</p>
+    </div>
 </body>
 </html>
